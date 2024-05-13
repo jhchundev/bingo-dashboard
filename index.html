@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>BINGO</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/377b7ecd85.js"></script>
+</head>
+
+<body>
+<div id="game-container">
+    <div id="header">
+        <h1>BINGO</h1>
+    </div>
+
+    <div id="current-ball-circle">
+        <span id="current-ball"></span>
+    </div>
+
+    <!-- Control buttons -->
+    <div id="control-buttons">
+        <button disabled="disabled" id="next-ball">NEXT BALL</button>
+        <button id="new-game">NEW GAME</button>
+    </div>
+
+    <!-- BINGO Grid -->
+    <div class="bingo-grid">
+        <!-- B Column -->
+        <div class="row" id="B-col">
+            <div class="header">B</div>
+            <div id="ball-1"></div>
+            <div id="ball-2"></div>
+            <div id="ball-3"></div>
+            <div id="ball-4"></div>
+            <div id="ball-5"></div>
+            <div id="ball-6"></div>
+            <div id="ball-7"></div>
+            <div id="ball-8"></div>
+            <div id="ball-9"></div>
+            <div id="ball-10"></div>
+            <div id="ball-11"></div>
+            <div id="ball-12"></div>
+            <div id="ball-13"></div>
+            <div id="ball-14"></div>
+            <div id="ball-15"></div>
+        </div>
+
+        <!-- I Column -->
+        <div class="row" id="I-col">
+            <div class="header">I</div>
+            <div id="ball-16"></div>
+            <div id="ball-17"></div>
+            <div id="ball-18"></div>
+            <div id="ball-19"></div>
+            <div id="ball-20"></div>
+            <div id="ball-21"></div>
+            <div id="ball-22"></div>
+            <div id="ball-23"></div>
+            <div id="ball-24"></div>
+            <div id="ball-25"></div>
+            <div id="ball-26"></div>
+            <div id="ball-27"></div>
+            <div id="ball-28"></div>
+            <div id="ball-29"></div>
+            <div id="ball-30"></div>
+
+        </div>
+
+        <!-- N Column -->
+        <div class="row" id="N-col">
+            <div class="header">N</div>
+            <div id="ball-31"></div>
+            <div id="ball-32"></div>
+            <div id="ball-33"></div>
+            <div id="ball-34"></div>
+            <div id="ball-35"></div>
+            <div id="ball-36"></div>
+            <div id="ball-37"></div>
+            <div id="ball-38"></div>
+            <div id="ball-39"></div>
+            <div id="ball-40"></div>
+            <div id="ball-41"></div>
+            <div id="ball-42"></div>
+            <div id="ball-43"></div>
+            <div id="ball-44"></div>
+            <div id="ball-45"></div>
+        </div>
+
+        <!-- G Column -->
+        <div class="row" id="G-col">
+            <div class="header">G</div>
+            <div id="ball-46"></div>
+            <div id="ball-47"></div>
+            <div id="ball-48"></div>
+            <div id="ball-49"></div>
+            <div id="ball-50"></div>
+            <div id="ball-51"></div>
+            <div id="ball-52"></div>
+            <div id="ball-53"></div>
+            <div id="ball-54"></div>
+            <div id="ball-55"></div>
+            <div id="ball-56"></div>
+            <div id="ball-57"></div>
+            <div id="ball-58"></div>
+            <div id="ball-59"></div>
+            <div id="ball-60"></div>
+        </div>
+
+        <!-- O Column -->
+        <div class="row" id="O-col">
+            <div class="header">O</div>
+            <div id="ball-61"></div>
+            <div id="ball-62"></div>
+            <div id="ball-63"></div>
+            <div id="ball-64"></div>
+            <div id="ball-65"></div>
+            <div id="ball-66"></div>
+            <div id="ball-67"></div>
+            <div id="ball-68"></div>
+            <div id="ball-69"></div>
+            <div id="ball-70"></div>
+            <div id="ball-71"></div>
+            <div id="ball-72"></div>
+            <div id="ball-73"></div>
+            <div id="ball-74"></div>
+            <div id="ball-75"></div>
+        </div>
+    </div>
+    <div class="checkbox-container">
+        <label for="shuffle-effect-enabled">
+            <input id="shuffle-effect-enabled" type="checkbox">
+            <span class="checkmark"></span>
+            Shuffle Effect
+        </label>
+    </div>
+</div>
+
+<div id="footer">
+    <a href="https://github.com/jhchundev" target="_blank">
+        <i class="fa-brands fa-github"></i>
+    </a>
+</div>
+
+<script src="bingo.js"></script>
+
+</body>
+</html>

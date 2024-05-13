@@ -1,0 +1,238 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#game-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#header a {
+    font-size: 32px;
+    color: #333;
+    margin-right: 10px;
+}
+
+#header h1 {
+    font-size: 32px;
+    color: #333;
+    margin: 0;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+}
+
+#footer a {
+    font-size: 48px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#footer a:hover {
+    color: #0366d6;
+}
+
+#footer a:hover {
+    color: #0366d6;
+}
+
+#current-ball-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin: 20px auto;
+}
+
+#control-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:disabled {
+    background-color: #6c757d;
+}
+
+button:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+.bingo-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.row {
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0; /* 간격 없애기 */
+    gap: 5px; /* Ball 간 간격 조정 */
+}
+
+.header {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #343a40;
+    margin-right: 5px; /* 헤더와 볼 사이 간격 조정 */
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #343a40;
+}
+
+#ball-1, #ball-2, #ball-3, #ball-4, #ball-5, #ball-6, #ball-7, #ball-8, #ball-9, #ball-10,
+#ball-11, #ball-12, #ball-13, #ball-14, #ball-15, #ball-16, #ball-17, #ball-18, #ball-19, #ball-20,
+#ball-21, #ball-22, #ball-23, #ball-24, #ball-25, #ball-26, #ball-27, #ball-28, #ball-29, #ball-30,
+#ball-31, #ball-32, #ball-33, #ball-34, #ball-35, #ball-36, #ball-37, #ball-38, #ball-39, #ball-40,
+#ball-41, #ball-42, #ball-43, #ball-44, #ball-45, #ball-46, #ball-47, #ball-48, #ball-49, #ball-50,
+#ball-51, #ball-52, #ball-53, #ball-54, #ball-55, #ball-56, #ball-57, #ball-58, #ball-59, #ball-60,
+#ball-61, #ball-62, #ball-63, #ball-64, #ball-65, #ball-66, #ball-67, #ball-68, #ball-69, #ball-70,
+#ball-71, #ball-72, #ball-73, #ball-74, #ball-75 {
+    width: 50px;
+    height: 50px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #343a40;
+}
+
+#ball-1.called, #ball-2.called, #ball-3.called, #ball-4.called, #ball-5.called,
+#ball-6.called, #ball-7.called, #ball-8.called, #ball-9.called, #ball-10.called,
+#ball-11.called, #ball-12.called, #ball-13.called, #ball-14.called, #ball-15.called,
+#ball-16.called, #ball-17.called, #ball-18.called, #ball-19.called, #ball-20.called,
+#ball-21.called, #ball-22.called, #ball-23.called, #ball-24.called, #ball-25.called,
+#ball-26.called, #ball-27.called, #ball-28.called, #ball-29.called, #ball-30.called,
+#ball-31.called, #ball-32.called, #ball-33.called, #ball-34.called, #ball-35.called,
+#ball-36.called, #ball-37.called, #ball-38.called, #ball-39.called, #ball-40.called,
+#ball-41.called, #ball-42.called, #ball-43.called, #ball-44.called, #ball-45.called,
+#ball-46.called, #ball-47.called, #ball-48.called, #ball-49.called, #ball-50.called,
+#ball-51.called, #ball-52.called, #ball-53.called, #ball-54.called, #ball-55.called,
+#ball-56.called, #ball-57.called, #ball-58.called, #ball-59.called, #ball-60.called,
+#ball-61.called, #ball-62.called, #ball-63.called, #ball-64.called, #ball-65.called,
+#ball-66.called, #ball-67.called, #ball-68.called, #ball-69.called, #ball-70.called,
+#ball-71.called, #ball-72.called, #ball-73.called, #ball-74.called, #ball-75.called {
+    background-color: #a79628; /* Green background for called numbers */
+    color: white; /* White text for contrast */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.checkbox-container label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 3px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
