@@ -1,5 +1,7 @@
 # BINGO Game
 
+![BINGO Game Demo](bingodemo.png)
+
 This is a simple web-based BINGO game created using HTML, CSS, and JavaScript. The game features a 5x5 grid with numbers
 from 1 to 75, and players can click the "NEXT BALL" button to randomly select a number. The selected number is displayed
 in the center of the screen and marked on the grid.
