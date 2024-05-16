@@ -14,9 +14,14 @@ in the center of the screen and marked on the grid.
 - Responsive design for various screen sizes
 - Customizable styles using CSS
 
+## Demo
+
+You can try out the BINGO game by visiting the [live demo](https://jhchundev.github.io/bingo-dashboard/).
+
 ## How to Play
 
-1. Open the `index.html` file in your web browser.
+1. Open the `index.html` file in your web browser or visit
+   the [live demo](https://jhchundev.github.io/bingo-dashboard/).
 2. Click the "NEXT BALL" button to randomly select a number.
 3. The selected number will be displayed in the center of the screen and marked on the grid.
 4. Continue selecting numbers until you complete a row, column, or diagonal on the grid.
